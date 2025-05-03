@@ -1,4 +1,4 @@
-Ynion Api endpoint how to use
+Ynion Api endpoint how to use:
 A.) Users
 	1.) Create User
 	POST	http://localhost:8000/public/users
@@ -8,13 +8,10 @@ A.) Users
   		"password": "123456",
   		"profilePicture": "profile.jpg"
 	}
-	
 	2.) Get All Users
 	GET	http://localhost:8000/public/users
-	
 	3.) Get Users by Email
 	GET	http://localhost:8000/public/users/john@example.com
-
 	4.) Update User by Id
 	PUT	http://localhost:8000/public/users/1
 	{
@@ -22,7 +19,6 @@ A.) Users
   		"email": "john_updated@example.com",
   		"profilePicture": "updated.jpg"
 	}
-
 	5.) Delete User by ID
 	DELETE	http://localhost:8000/public/users/1
 
@@ -37,14 +33,10 @@ B.) Media
   		"attributes": "{\"width\": 1024, \"height\": 768}",
   		"positionXY": "100,200"
 	}
-
-	
 	2.) Get All Media
 	GET	http://localhost:8000/public/media
-	
 	3.) Get Media by Id
 	GET	http://localhost:8000/public/media/1
-
 	4.) Update Media by Id
 	PUT	http://localhost:8000/public/media/1
 	{
@@ -55,7 +47,6 @@ B.) Media
   		"attributes": "{\"width\": 1024, \"height\": 768}",
   		"positionXY": "200,400"
 	}
-
 	5.) Delete media by ID
 	DELETE	http://localhost:8000/public/media/1
 
@@ -71,10 +62,8 @@ C.) Notes
     		"createdAt": "2025-05-03 14:30:00",
     		"updatedAt": "2025-05-03 14:30:00"
 	}
-	
 	2.) Get All Notes
 	GET	http://localhost:8000/public/notes
-
 	3.) Get Note by ID
 	GET	http://localhost:8000/public/notes/1
 	{
@@ -86,7 +75,6 @@ C.) Notes
     		"createdAt": "2025-05-03 14:30:00",
     		"updatedAt": "2025-05-03 14:30:00"
 	}
-	
 	4.) Update Note by ID
 	PUT	http://localhost:8000/public/notes/1
 	{
@@ -96,7 +84,6 @@ C.) Notes
     		"content": "This is the updated content.",
     		"updatedAt": "2025-05-03 15:00:00"
 	}
-
 	5.) Delete Note by ID
 	DELETE	http://localhost:8000/public/notes/1
 
@@ -110,10 +97,8 @@ D.) History
     		"dateEdite": "2025-05-03 14:30:00",
     		"editedBy": 2          // User who edited the note
 	}
-	
 	2.) Get All History Records
 	GET	http://localhost:8000/public/history
-
 	3.) Get History by ID
 	GET	http://localhost:8000/public/history/1
 	{
@@ -148,7 +133,6 @@ E.) Collaboration
 	}
 	2.) Get All Collaborations
 	GET	http://localhost:8000/public/collaboration
-
 	3.) Get Collaboration by ID
 	GET	http://localhost:8000/public/collaboration/1
 	{
