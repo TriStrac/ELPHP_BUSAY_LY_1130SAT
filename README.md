@@ -3,7 +3,7 @@
 This API allows interaction with the Ynion platform, including managing users, media, notes, history edits, and collaborations. All endpoints are prefixed with:
 
 ```
-http://localhost:8000/public/
+tristrac-api.yeems214.xyz/public/
 ```
 
 ---
