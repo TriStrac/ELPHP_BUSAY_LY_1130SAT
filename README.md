@@ -84,7 +84,7 @@ https://tristrac-api.yeems214.xyz/public/
 ## C.) Notes
 
 ### 1. Create Note
-**POST** `/notes`  
+**POST** `/note`  
 ```json
 {
   "ownerID": 1,
@@ -97,10 +97,10 @@ https://tristrac-api.yeems214.xyz/public/
 ```
 
 ### 2. Get All Notes
-**GET** `/notes`
+**GET** `/note`
 
 ### 3. Get Note by ID
-**GET** `/notes/1`  
+**GET** `/note/1`  
 ```json
 {
   "NoteID": 1,
@@ -114,7 +114,7 @@ https://tristrac-api.yeems214.xyz/public/
 ```
 
 ### 4. Update Note by ID
-**PUT** `/notes/1`  
+**PUT** `/note/1`  
 ```json
 {
   "ownerID": 1,
@@ -126,7 +126,7 @@ https://tristrac-api.yeems214.xyz/public/
 ```
 
 ### 5. Delete Note by ID
-**DELETE** `/notes/1`
+**DELETE** `/note/1`
 
 ---
 
