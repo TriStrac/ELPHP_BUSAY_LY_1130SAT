@@ -15,11 +15,9 @@ class UserModel {
 
         $stmt = $this->conn->prepare($query);
 
-        $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
-
         $stmt->bindParam(':username', $username);
         $stmt->bindParam(':email', $email);
-        $stmt->bindParam(':password', $hashedPassword);
+        $stmt->bindParam(':password', $password);
         $stmt->bindParam(':profilePicture', $profilePicture);
 
         if ($stmt->execute()) {
